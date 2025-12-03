@@ -6,18 +6,18 @@ import { Hero } from "./components/Hero";
 import { SocialProof } from "./components/SocialProof";
 
 function App() {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <GridBackground />
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <SocialProof />
-        <Features />
-      </main>
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="flex flex-col min-h-screen">
+            <GridBackground />
+            <Header />
+            <main className="flex-1">
+                <Hero />
+                <SocialProof />
+                <Features />
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
