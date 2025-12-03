@@ -1,25 +1,19 @@
-import { Features } from "./components/Features";
-import { Footer } from "./components/Footer";
-import { GridBackground } from "./components/GridBackground";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import SEO from "./components/Seo";
-import { SocialProof } from "./components/SocialProof";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Changelog from "./pages/Changelog";
+import Layout from "./components/Layout";
 
 function App() {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <SEO />
-      <GridBackground />
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <SocialProof />
-        <Features />
-      </main>
-      <Footer />
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route element={<Layout />}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/changelog" element={<Changelog />} />
+                </Route>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

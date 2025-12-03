@@ -1,21 +1,28 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
         <header className="bg-background text-foreground py-4 px-6 flex items-center justify-between">
-            <a href="#" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2">
                 <img src="/logo.svg" alt="Mokku" className="h-8 w-8" />
                 <span className="text-lg font-semibold">Mokku</span>
-            </a>
+            </Link>
             <nav className="hidden md:flex items-center gap-6">
                 <a
-                    href="#features"
+                    href="/#features"
                     className="text-sm font-medium hover:underline"
                 >
                     Features
                 </a>
+                <Link
+                    to="/changelog"
+                    className="text-sm font-medium hover:underline"
+                >
+                    Changelog
+                </Link>
                 <a
-                    href="#support"
+                    href="/#support"
                     className="text-sm font-medium hover:underline"
                 >
                     Support
