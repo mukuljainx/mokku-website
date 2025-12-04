@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
 export const Footer = () => {
@@ -6,7 +7,7 @@ export const Footer = () => {
             id="support"
             className="bg-muted text-muted-foreground py-8 px-6 mt-20"
         >
-            <div className="container mx-auto grid gap-8 md:grid-cols-2">
+            <div className="container mx-auto grid gap-8 md:grid-cols-3">
                 <div>
                     <h3 className="text-lg font-semibold">Support Us</h3>
                     <p className="mt-2">
@@ -51,6 +52,32 @@ export const Footer = () => {
                             </a>
                         </Button>
                     </div>
+                </div>
+                <div>
+                    <h3 className="text-lg font-semibold">Links</h3>
+                    <ul className="mt-2 space-y-2">
+                        <li>
+                            <Link
+                                to="/changelog"
+                                className="hover:text-foreground"
+                            >
+                                Changelog
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/faq" className="hover:text-foreground">
+                                Faq
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/architecture"
+                                className="hover:text-foreground"
+                            >
+                                Architecture
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div className="container mx-auto mt-8 text-center text-sm">
