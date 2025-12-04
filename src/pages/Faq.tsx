@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "Why a website?",
-        answer: "A web app makes a lot of things easier to develop. Also, there is no review process, so faster updates.",
+        answer: "Panel is good for checking quick stats, but for managing a lot of mocks, headers, a website is more user-friendly. Writing complex logic on a panel is also difficult. Things becomes clumsy very easily. A web app solves all these problems. Pushing updates to web app is a lot faster.",
     },
 ];
 
