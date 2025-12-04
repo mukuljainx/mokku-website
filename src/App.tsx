@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Changelog from "./pages/Changelog";
+import Faq from "./pages/Faq";
 import Layout from "./components/Layout";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
                 <Route element={<Layout />}>
                     <Route path="/" element={<Home />} />
                     <Route path="/changelog" element={<Changelog />} />
+                    <Route path="/faq" element={<Faq />} />
                 </Route>
             </Routes>
         </Router>

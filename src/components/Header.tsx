@@ -21,6 +21,9 @@ export const Header = () => {
                 >
                     Changelog
                 </Link>
+                <Link to="/faq" className="text-sm font-medium hover:underline">
+                    FAQ's
+                </Link>
                 <a
                     href="/#support"
                     className="text-sm font-medium hover:underline"
