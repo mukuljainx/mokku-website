@@ -21,12 +21,22 @@ export const Hero = () => {
                         <a href="https://github.com/mukuljainx/Mokku">GitHub</a>
                     </Button>
                 </div>
-                <div className="mt-12">
+                {/* <div className="mt-12">
                     <img
                         src="https://raw.githubusercontent.com/mukuljainx/mokku/master/docs/store/small-promo.png"
                         alt="Mokku Promo Banner"
                         className="mx-auto rounded-lg shadow-lg"
                     />
+                </div> */}
+
+                <div className="mt-12 flex justify-center">
+                    <iframe
+                        className="w-full max-w-3xl aspect-video rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/NDJ-UifByiE"
+                        title="Mokku Demo Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </div>
         </section>
