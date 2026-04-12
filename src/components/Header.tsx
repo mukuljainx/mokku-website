@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 export const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -9,7 +10,7 @@ export const Header = () => {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <img src="/logo.svg" alt="Mokku" className="h-8 w-8" />
+          <Logo className="h-8 w-8" />
           <span className="text-lg font-bold text-white tracking-tight">Mokku</span>
         </a>
 

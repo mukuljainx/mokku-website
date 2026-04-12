@@ -1,6 +1,7 @@
 import { Github, Coffee, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/Logo";
 
 export const Footer = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer = () => {
           {/* Brand column */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <img src="/logo.svg" alt="Mokku" className="h-7 w-7" />
+              <Logo className="h-7 w-7" />
               <span className="text-base font-bold text-white">Mokku</span>
             </div>
             <p className="text-sm text-slate-500 leading-relaxed">

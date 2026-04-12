@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { GridBackground } from "@/components/GridBackground";
 import { changelogList } from "@/components/changeLogList";
+import { Logo } from "@/components/Logo";
 
 const categoryConfig: Record<
   string,
@@ -39,7 +40,7 @@ export const ChangelogPage = () => {
       <header className="sticky top-0 z-50 border-b border-white/5 bg-background/80 backdrop-blur-xl">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2.5">
-            <img src="/logo.svg" alt="Mokku" className="h-7 w-7" />
+            <Logo className="h-7 w-7" />
             <span className="text-base font-bold text-white">Mokku</span>
           </Link>
           <Button
