@@ -124,7 +124,7 @@ export const ChangelogPage = () => {
                             {cfg.label}
                           </div>
                           <ul className="flex flex-col gap-1.5">
-                            {items.map((item) => (
+                            {items.map((item: string) => (
                               <li
                                 key={item}
                                 className="flex items-start gap-2.5"
