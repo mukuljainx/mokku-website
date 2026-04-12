@@ -1,51 +1,110 @@
-import { Button } from "./ui/button";
+import { Github, Coffee, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Changelog } from "./Changelog";
 
 export const Footer = () => {
   return (
-    <footer
-      id="support"
-      className="bg-muted text-muted-foreground py-8 px-6 mt-20"
-    >
-      <div className="container mx-auto grid gap-8 md:grid-cols-2">
-        <div>
-          <h3 className="text-lg font-semibold">Support Us</h3>
-          <p className="mt-2">
-            Developing and maintaining Mokku is a significant effort! Please
-            consider supporting the extension if it helps your workflow.
-          </p>
-          <div className="mt-4 flex gap-4">
-            <Button asChild variant="outline">
-              <a href="https://paypal.me/mukuljainx" target="_blank">
-                PayPal
-              </a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href="https://www.buymeacoffee.com/mukuljainx" target="_blank">
-                Buy Me A Coffee
-              </a>
-            </Button>
+    <footer id="support" className="border-t border-white/5 bg-background/80 mt-8">
+      <div className="container mx-auto px-6 py-14">
+        <div className="grid gap-10 md:grid-cols-3">
+          {/* Brand column */}
+          <div>
+            <div className="flex items-center gap-2.5 mb-4">
+              <img src="/logo.svg" alt="Mokku" className="h-7 w-7" />
+              <span className="text-base font-bold text-white">Mokku</span>
+            </div>
+            <p className="text-sm text-slate-500 leading-relaxed">
+              A free, open-source Chrome DevTools extension for mocking API
+              calls — with zero telemetry and full local storage.
+            </p>
           </div>
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold">Bugs / Request a Feature</h3>
-          <p className="mt-2">
-            Please use our GitHub issues page to report any bug or feature
-            request.
-          </p>
-          <div className="mt-4">
-            <Button asChild variant="outline">
-              <a
-                href="https://github.com/mukuljainx/Mokku/issues"
-                target="_blank"
+
+          {/* Community */}
+          <div>
+            <h3 className="text-sm font-semibold text-white mb-4">Community</h3>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="https://github.com/mukuljainx/Mokku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  <Github size={14} />
+                  GitHub Repository
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/mukuljainx/Mokku/issues"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  Report a Bug / Request Feature
+                </a>
+              </li>
+              <li>
+                <Changelog />
+              </li>
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h3 className="text-sm font-semibold text-white mb-2">Support Us</h3>
+            <p className="text-sm text-slate-500 mb-4 leading-relaxed">
+              Mokku is free to use. If it saves you time, consider buying a
+              coffee or supporting via UPI.
+            </p>
+            <div className="flex flex-col gap-2.5">
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="border-white/10 bg-white/3 text-slate-300 hover:bg-white/8 hover:text-white gap-2 justify-start w-fit"
               >
-                GitHub Issues
-              </a>
-            </Button>
+                <a
+                  href="https://www.buymeacoffee.com/mukuljainx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Coffee size={14} />
+                  Buy Me a Coffee
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="border-white/10 bg-white/3 text-slate-300 hover:bg-white/8 hover:text-white gap-2 justify-start w-fit"
+              >
+                <a
+                  href="https://paypal.me/mukuljainx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Heart size={14} />
+                  PayPal / UPI
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="container mx-auto mt-8 text-center text-sm">
-        <p>&copy; 2025 Mokku. All rights reserved.</p>
+
+        <div className="border-t border-white/5 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-slate-600">
+            &copy; {new Date().getFullYear()} Mokku. Open source under MIT.
+          </p>
+          <a
+            href="https://chrome.google.com/webstore/detail/mokku-mock-api-calls-seam/llflfcikklhgamfmnjkgpdadpmdplmji"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-slate-600 hover:text-slate-400 transition-colors"
+          >
+            Chrome Web Store
+          </a>
+        </div>
       </div>
     </footer>
   );

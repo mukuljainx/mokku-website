@@ -3,6 +3,7 @@ import { Footer } from "./components/Footer";
 import { GridBackground } from "./components/GridBackground";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { Privacy } from "./components/Privacy";
 import { SocialProof } from "./components/SocialProof";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <SocialProof />
         <Features />
+        <Privacy />
       </main>
       <Footer />
     </div>
