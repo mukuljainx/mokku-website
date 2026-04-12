@@ -12,7 +12,7 @@ export const Hero = () => {
         {/* Ghost mascot */}
         <div className="flex justify-center mb-6">
           <img
-            src="/logos/mokku.svg"
+            src="/logos/mokku-logo.svg"
             alt="Mokku mascot"
             className="h-28 md:h-36 w-auto drop-shadow-[0_0_40px_rgba(173,97,222,0.4)]"
           />
