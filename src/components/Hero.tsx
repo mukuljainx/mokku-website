@@ -9,6 +9,15 @@ export const Hero = () => {
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       <div className="container mx-auto px-6 text-center">
+        {/* Ghost mascot */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="/logos/mokku.svg"
+            alt="Mokku mascot"
+            className="h-28 md:h-36 w-auto drop-shadow-[0_0_40px_rgba(173,97,222,0.4)]"
+          />
+        </div>
+
         {/* Badge */}
         <div className="inline-flex items-center gap-2 border border-violet-500/30 bg-violet-500/10 text-violet-300 text-xs font-medium px-3.5 py-1.5 rounded-full mb-8">
           <Star size={11} className="fill-violet-300" />
