@@ -15,9 +15,9 @@ export const Header = () => {
 
         <nav className="hidden md:flex items-center gap-8">
           {[
+            { label: "How it works", href: "#how-it-works" },
             { label: "Features", href: "#features" },
-            { label: "Privacy", href: "#privacy" },
-            { label: "Support", href: "#support" },
+            { label: "Compare", href: "#comparison" },
             { label: "GitHub", href: "https://github.com/mukuljainx/Mokku" },
           ].map(({ label, href }) => (
             <a
@@ -53,9 +53,9 @@ export const Header = () => {
       {mobileOpen && (
         <div className="md:hidden border-t border-white/5 bg-background px-6 pb-4 flex flex-col gap-4">
           {[
+            { label: "How it works", href: "#how-it-works" },
             { label: "Features", href: "#features" },
-            { label: "Privacy", href: "#privacy" },
-            { label: "Support", href: "#support" },
+            { label: "Compare", href: "#comparison" },
             { label: "GitHub", href: "https://github.com/mukuljainx/Mokku" },
           ].map(({ label, href }) => (
             <a

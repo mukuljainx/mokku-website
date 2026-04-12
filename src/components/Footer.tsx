@@ -1,6 +1,6 @@
 import { Github, Coffee, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Changelog } from "./Changelog";
 
 export const Footer = () => {
   return (
@@ -45,7 +45,12 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <Changelog />
+                <Link
+                  to="/changelog"
+                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  Changelog
+                </Link>
               </li>
             </ul>
           </div>
