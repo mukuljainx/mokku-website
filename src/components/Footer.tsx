@@ -26,23 +26,23 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://github.com/mukuljainx/Mokku"
+                  href="https://github.com/mukuljainx/Mokku/issues/new?template=bug_report.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
                 >
                   <Github size={14} />
-                  GitHub Repository
+                  Report a Bug
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/mukuljainx/Mokku/issues"
+                  href="https://github.com/mukuljainx/Mokku/issues/new?template=bug_report.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-slate-400 hover:text-white transition-colors"
                 >
-                  Report a Bug / Request Feature
+                  Report a Bug
                 </a>
               </li>
               <li>
