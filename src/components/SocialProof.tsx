@@ -1,16 +1,8 @@
 const companies = [
-  {
-    name: "Microsoft",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
-  },
-  {
-    name: "Uber",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.png/2560px-Uber_logo_2018.png",
-  },
-  {
-    name: "Atlassian",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Atlassian_logo.svg/2560px-Atlassian_logo.svg.png",
-  },
+  { name: "Microsoft", src: "/company-logo/microsoft-logo-svgrepo-com.svg" },
+  { name: "Uber", src: "/company-logo/uber-svgrepo-com.svg" },
+  { name: "Atlassian", src: "/company-logo/atlassian.svg" },
+  { name: "Walmart", src: "/company-logo/walmart-logo-svgrepo-com.svg" },
 ];
 
 export const SocialProof = () => {
@@ -26,7 +18,7 @@ export const SocialProof = () => {
               key={name}
               src={src}
               alt={name}
-              className="h-7 object-contain opacity-30 hover:opacity-50 transition-opacity grayscale invert"
+              className="h-7 object-contain opacity-30 grayscale invert hover:opacity-100 hover:grayscale-0 hover:invert-0 transition-all duration-300"
             />
           ))}
         </div>
