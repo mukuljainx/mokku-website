@@ -1,5 +1,29 @@
 export const changelogList = [
     {
+        version: "2.4.13",
+        date: "19 April 2026",
+        skip: true,
+        changes: {
+            Adds: ["Update docs"],
+        },
+    },
+    {
+        version: "2.4.12",
+        date: "19 April 2026",
+        skip: true,
+        changes: {
+            Adds: ["Fix Survey form"],
+        },
+    },
+    {
+        version: "2.4.11",
+        date: "18 April 2026",
+        skip: true,
+        changes: {
+            Adds: ["Survey form"],
+        },
+    },
+    {
         version: "2.4.10",
         date: "29 March 2026",
         changes: {

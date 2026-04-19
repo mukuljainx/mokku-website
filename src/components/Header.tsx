@@ -19,6 +19,7 @@ export const Header = () => {
             { label: "How it works", href: "#how-it-works" },
             { label: "Features", href: "#features" },
             { label: "Compare", href: "#comparison" },
+            { label: "Docs", href: "https://docs.mokku.app/" },
             { label: "Report a Bug", href: "https://github.com/mukuljainx/Mokku/issues/new?template=bug_report.md" },
           ].map(({ label, href }) => (
             <a
@@ -57,6 +58,7 @@ export const Header = () => {
             { label: "How it works", href: "#how-it-works" },
             { label: "Features", href: "#features" },
             { label: "Compare", href: "#comparison" },
+            { label: "Docs", href: "https://docs.mokku.app/" },
             { label: "Report a Bug", href: "https://github.com/mukuljainx/Mokku/issues/new?template=bug_report.md" },
           ].map(({ label, href }) => (
             <a

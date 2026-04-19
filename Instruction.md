@@ -39,7 +39,7 @@ Workspaces: Mention that mocks and headers can be grouped by "Projects" and impo
 
 Create a dedicated block emphasizing the "Privacy First" approach. Explicitly state: "Zero telemetry. Mokku does not collect personal information and all mocks are stored securely in your Chrome local store."
 
-Include social proof: Mention the tool is trusted by 10,000+ users and holds a 4.1/5 rating.
+Include social proof: Mention the tool is trusted by 15,000+ users and holds a 4.1/5 rating.
 
 5. Footer & Community Links:
 
