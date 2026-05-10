@@ -1,5 +1,44 @@
 export const changelogList = [
     {
+        version: "2.4.17",
+        date: "10 May 2026",
+        changes: {
+            Adds: [
+                "Enable Code Sync button hidden for users already enrolled in the beta",
+            ],
+        },
+        skip: true,
+    },
+    {
+        version: "2.4.16",
+        date: "10 May 2026",
+        changes: {
+            Adds: [
+                "Mocks as Code (Beta) — sync your mocks to a local folder as version-controlled JSON files, reviewable in PRs and editable in VS Code",
+                "Push and pull mocks and headers between Mokku and your repo folder",
+                "Smart push detects renames and deletions — no stale files left behind",
+            ],
+            Fixes: ["Improved border visibility in dark mode"],
+        },
+        skip: true,
+    },
+    {
+        version: "2.4.15",
+        date: "25 April 2026",
+        skip: true,
+        changes: {
+            Adds: ["Update form"],
+        },
+    },
+    {
+        version: "2.4.14",
+        date: "21 April 2026",
+        skip: true,
+        changes: {
+            Adds: ["Update form"],
+        },
+    },
+    {
         version: "2.4.13",
         date: "19 April 2026",
         skip: true,
