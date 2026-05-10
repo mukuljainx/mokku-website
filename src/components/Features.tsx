@@ -1,4 +1,4 @@
-import { Code2, GitBranch, Globe, FolderOpen, Zap, Shield } from "lucide-react";
+import { Code2, GitBranch, Globe, FolderOpen, Zap, Shield, FolderSync } from "lucide-react";
 
 const features = [
   {
@@ -55,6 +55,16 @@ const features = [
     glow: "group-hover:shadow-red-500/20",
     border: "group-hover:border-red-500/30",
   },
+  {
+    icon: FolderSync,
+    title: "Mocks as Code",
+    beta: true,
+    description:
+      "Sync your mocks and headers to a local folder as version-controlled JSON files. Push and pull between Mokku and your repo — reviewable in PRs, editable in VS Code, and AI-ready.",
+    accent: "text-teal-400",
+    glow: "group-hover:shadow-teal-500/20",
+    border: "group-hover:border-teal-500/30",
+  },
 ];
 
 export const Features = () => {
@@ -75,7 +85,7 @@ export const Features = () => {
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {features.map(({ icon: Icon, title, description, accent, glow, border }) => (
+          {features.map(({ icon: Icon, title, description, accent, glow, border, beta }) => (
             <div
               key={title}
               className={`group relative rounded-xl border border-white/8 bg-white/3 p-6 hover:bg-white/5 transition-all duration-300 shadow-xl hover:shadow-2xl ${glow} ${border}`}
@@ -85,7 +95,14 @@ export const Features = () => {
               >
                 <Icon size={20} />
               </div>
-              <h3 className="text-base font-semibold text-white mb-2">{title}</h3>
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-base font-semibold text-white">{title}</h3>
+                {beta && (
+                  <span className="text-[10px] font-semibold uppercase tracking-widest bg-teal-500/15 text-teal-400 px-2 py-0.5 rounded-full border border-teal-500/25">
+                    Beta
+                  </span>
+                )}
+              </div>
               <p className="text-sm text-slate-400 leading-relaxed">{description}</p>
             </div>
           ))}
